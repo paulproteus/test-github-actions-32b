@@ -16,3 +16,7 @@ jobs:
         uses: ./
         with:
           command: cat output.txt
+      - name: Check for self checkout, e.g. entrypoint.sh
+        uses: ./
+        with:
+          command: ls     
