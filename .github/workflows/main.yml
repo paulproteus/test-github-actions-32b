@@ -10,7 +10,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Store hello
         uses: ./ # Uses an action in the root directory
-        run: gcc -v > output.txt
+        with:
+          command: gcc -v > output.txt
       - name: Read hello
         uses: ./
-        run: cat output.txt
+        with:
+          command: cat output.txt
