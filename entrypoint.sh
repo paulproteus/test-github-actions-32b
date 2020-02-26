@@ -1,3 +1,3 @@
 #!/bin/sh -l
 set -x
-$1
+exec bash -x -c "$1"
