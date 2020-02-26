@@ -1,3 +1,3 @@
 #!/bin/sh -l
-
-exec $1
+set -x
+$1
